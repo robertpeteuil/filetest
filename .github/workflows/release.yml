@@ -26,5 +26,6 @@ jobs:
         destination_folder: 'docs'
         user_email: 'actions@github.com'
         user_name: 'release-action'
-        commit_message: 'add latest release'
+        # commit_message: 'add latest release'
+        commit_message: 'add release ${{ github.event.release.tag_name }}'
   

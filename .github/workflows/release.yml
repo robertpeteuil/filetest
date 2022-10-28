@@ -27,5 +27,5 @@ jobs:
         user_email: 'actions@github.com'
         user_name: 'release-action'
         # commit_message: 'add latest release'
-        commit_message: 'add release ${{ github.event.release.tag_name }}'
+        commit_message: 'update to v${{ github.event.release.tag_name }} from ${{ github.repository }}'
   

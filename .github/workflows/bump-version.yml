@@ -12,7 +12,7 @@ jobs:
       id: bump_version
       uses: robertpeteuil/increment-version-action@master
       with:
-        current-version: '1.2.3-beta1'
+        current-version: '1.2.3-beta.1'
         version-fragment: 'beta'
 
     - name: use version

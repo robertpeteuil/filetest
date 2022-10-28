@@ -13,7 +13,7 @@ jobs:
       uses: robertpeteuil/increment-version-action@master
       with:
         current-version: '1.2.3'
-        version-fragment: 'bug'
+        version-fragment: 'patch'
 
     - name: use version
       run: echo 'new version = v${{ steps.bump_version.outputs.next-version }}'

@@ -7,19 +7,15 @@ jobs:
   adjust-version:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout
-      uses: actions/checkout@v3
 
-    - name: Bump release version
+    - name: Bump version
       id: bump_version
       uses: robertpeteuil/increment-version-action@master
-      # uses: christian-draeger/increment-semantic-version@1.0.2
       with:
         current-version: '1.2.3'
-        # current-version: ${{ steps.get_version.outputs.version }}
-        version-fragment: 'feature'
+        version-fragment: 'bug'
 
     - name: Do something with your bumped release version
       run: echo ${{ steps.bump_version.outputs.next-version }}
-      # will print 2.12.0
+
 

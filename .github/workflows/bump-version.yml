@@ -15,7 +15,7 @@ jobs:
         current-version: '1.2.3'
         version-fragment: 'bug'
 
-    - name: Do something with your bumped release version
+    - name: use version
       run: echo 'new version = v${{ steps.bump_version.outputs.next-version }}'
 
 
